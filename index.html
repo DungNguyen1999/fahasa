@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./sass/css/fonts.css">
+    <link rel="stylesheet" href="./sass/css/base.css">
+    <link rel="stylesheet" href="./sass/css/main.css">
+    <link rel="stylesheet" href="./sass/css/common.css">
+    <link rel="stylesheet" href="./sass/css/style.css">
+    <link rel="stylesheet" href="./sass/css/responsive.css">
+    <link rel="stylesheet" href="./sass/css/header.css" />
+    <link rel="stylesheet" href="sass/css/bootstrap.css" />
     <title>Fahasa</title>
 </head>
 
@@ -25,201 +27,352 @@
         <!-- HEADER -->
 
         <header class="header">
-
-            <!-- NAVBAR -->
-
             <nav class="navbar">
-                <div class="navbar__top">
-                    <a href="">
-                        <img src="./assets/img/McBooks_Header_V1_1263x60.jpg" alt="" />
-                    </a>
+              <div class="navbar__top">
+                <a href="">
+                  <img src="./assets/img/McBooks_Header_V1_1263x60.jpg" alt="" />
+                </a>
+              </div>
+    
+              <div class="container">
+                <div class="navbar__logo">
+                  <img
+                    src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/logo/fahasa_logo.png"
+                    alt=""
+                  />
                 </div>
-
-                <div class="container">
-                    <div class="navbar__logo">
-                        <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/logo/fahasa_logo.png"
-                            alt="" />
+                <div class="navbar__menu">
+                  <div class="navbar__menu-logo-wrap">
+                    <div class="navbar__menu-logo"></div>
+                    <div class="navbar__menu-down"></div>
+                  </div>
+                  <div class="navbar__menu-list">
+                    <div class="navbar__menu-list-left">
+                      <h2 class="title-left">Danh mục sản phẩm</h2>
+                      <ul class="list-left">
+                        <li class="item-left active-item-left item-left-1">Sách trong nước</li>
+                        <li class="item-left item-left-2">FOREIGN BOOKS</li>
+                        <li class="item-left item-left-3">VPP - Dụng cụ học sinh</li>
+                        <li class="item-left item-left-4">Đồ Chơi</li>
+                        <li class="item-left item-left-5">Làm Đẹp - Sức Khỏe</li>
+                        <li class="item-left item-left-6">Hành Trang Đến Trường</li>
+                        <li class="item-left item-left-7">VPP - DCHS Theo Thương Hiệu</li>
+                        <li class="item-left item-left-8">Đồ Chơi Theo Thương Hiệu</li>
+                        <li class="item-left item-left-9">Bách Hóa Online - Lưu Niệm</li>
+                      </ul>
                     </div>
-                    <div class="navbar__menu">
-                        <div class="navbar__menu-logo"></div>
-                        <div class="navbar__menu-down"></div>
-                    </div>
-                    <div class="navbar__search">
-                        <div class="navbar__search-input-wrap">
-                            <input class="navbar__search-input" type="text"
-                                placeholder="Tìm kiểm sản phẩm mong muốn..." />
-                            <div class="navbar__search-rcm">
-                                <a class="search-rcm__top">
-                                    <span>Luyện Thi THPT Quốc Gia</span>
-                                    <img src="./assets/img/Artboard_11.3.jpg" alt="" />
-                                </a>
-                                <div class="search-rcm__mid">
-                                    <div class="search-rcm--title">
-                                        <div class="search-rcm--title-name">
-                                            <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_searchtrending_black.svg"
-                                                alt="" class="i-up" />
-                                            <span>Từ khóa hot</span>
-                                        </div>
-                                        <div class="search-rcm--random"></div>
-                                    </div>
-                                    <ul class="search-rcm__mid-list row row-cols-lg-3 gx-2 gx-3">
-                                        <li class="search-rcm__mid-item col">
-                                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
-                                            <span>Tâm Lý Giảm Đến 50%</span>
-                                        </li>
-                                        <li class="search-rcm__mid-item col">
-                                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
-                                            <span>Tâm Lý Giảm Đến 50%</span>
-                                        </li>
-                                        <li class="search-rcm__mid-item col">
-                                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
-                                            <span>Tâm Lý Giảm Đến 50%</span>
-                                        </li>
-                                        <li class="search-rcm__mid-item col">
-                                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
-                                            <span>Tâm Lý Giảm Đến 50%</span>
-                                        </li>
-                                        <li class="search-rcm__mid-item col">
-                                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
-                                            <span>Tâm Lý Giảm Đến 50%</span>
-                                        </li>
-                                        <li class="search-rcm__mid-item col">
-                                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
-                                            <span>Tâm Lý Giảm Đến 50%</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="line"></div>
-                                <div class="search-rcm__bot">
-                                    <div class="search-rcm--title">
-                                        <div class="search-rcm--title-name">
-                                            <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg"
-                                                alt="" />
-                                            <span>Danh mục nổi bật</span>
-                                        </div>
-                                        <div class="search-rcm--random"></div>
-                                    </div>
-                                    <ul class="search-rcm__bot-list row gx-3 row-cols-lg-4">
-                                        <li class="search-rcm__bot-item col">
-                                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
-                                            <p>Tủ Sách Minh Long Giảm 50%</p>
-                                        </li>
-                                        <li class="search-rcm__bot-item col">
-                                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
-                                            <p>Tủ Sách Minh Long Giảm 50%</p>
-                                        </li>
-                                        <li class="search-rcm__bot-item col">
-                                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
-                                            <p>Tủ Sách Minh Long Giảm 50%</p>
-                                        </li>
-                                        <li class="search-rcm__bot-item col">
-                                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
-                                            <p>Tủ Sách Minh Long Giảm 50%</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="navbar__search-bg"></div>
+                    <div class="line-nav-menu"></div>
+                    <div class="navbar__menu-list-right">
+                      <h2 class="title-right">
+                        <i
+                          style="
+                            background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_sachtrongnuoc.svg');
+                          "
+                        ></i>
+                        Sách Trong Nước
+                      </h2>
+                      <div class="row row-cols-lg-4">
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">VĂN HỌC</h3>
+                            <li class="item-right">Tiểu Thuyết</li>
+                            <li class="item-right">Truyện Ngắn - Tản Văn</li>
+                            <li class="item-right">Light Novel</li>
+                            <li class="item-right">Ngôn Tình</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
                         </div>
-                        <button>
-                            <div style="
-                          background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_search_white.svg');
-                        "></div>
-                        </button>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">KINH TẾ</h3>
+                            <li class="item-right">
+                              Nhân Vật - Bài Học Kinh Doanh
+                            </li>
+                            <li class="item-right">Quản Trị - Lãnh Đạo</li>
+                            <li class="item-right">Marketing - Bán Hàng</li>
+                            <li class="item-right">Phân Tích Kinh Tế</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">TÂM LÝ - KĨ NĂNG SỐNG</h3>
+                            <li class="item-right">Kỹ Năng Sống</li>
+                            <li class="item-right">Rèn Luyện Nhân Cách</li>
+                            <li class="item-right">Tâm Lý</li>
+                            <li class="item-right">Sách Cho Tuổi Mới Lớn</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">NUÔI DẠY CON</h3>
+                            <li class="item-right">Cẩm Nang Làm Cha Mẹ</li>
+                            <li class="item-right">Phương Pháp Giáo Dục Trẻ ...</li>
+                            <li class="item-right">Phát Triển Trí Tuệ Cho Trẻ</li>
+                            <li class="item-right">Phát Triển Kỹ Năng Cho Trẻ</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">SÁCH THIẾU NHI</h3>
+                            <li class="item-right">Manga - Comic</li>
+                            <li class="item-right">Kiến Thức Bách Khoa</li>
+                            <li class="item-right">Sách Tranh Kỹ Năng Sống C...</li>
+                            <li class="item-right">Vừa Học - Vừa Học Vừa Chơ...</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">TIỂU SỬ - HỒI KÝ</h3>
+                            <li class="item-right">Câu Chuyện Cuộc Đời</li>
+                            <li class="item-right">Chính Trị</li>
+                            <li class="item-right">Kinh Tế</li>
+                            <li class="item-right">Nghệ Thuật - Giải Trí</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">GIÁO KHOA - THAM KHẢO</h3>
+                            <li class="item-right">Sách Giáo Khoa</li>
+                            <li class="item-right">Sách Tham Khảo</li>
+                            <li class="item-right">Luyện Thi THPT Quốc Gia</li>
+                            <li class="item-right">Mẫu Giáo</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">SÁCH HỌC NGOẠI NGỮ</h3>
+                            <li class="item-right">Tiếng Anh</li>
+                            <li class="item-right">Tiếng Nhật</li>
+                            <li class="item-right">Tiếng Hoa</li>
+                            <li class="item-right">Tiếng Hàn</li>
+                            <li class="item-right">Xem tất cả</li>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">
+                              SÁCH MỚI <span style="color: #ff0000">&nbsp;♥</span>
+                            </h3>
+                          </ul>
+                        </div>
+                        <div class="col">
+                          <ul class="list-right">
+                            <h3 class="title-item-right">
+                              SÁCH BÁN CHẠY
+                              <span style="color: #ff0000">&nbsp;♥</span>
+                            </h3>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
-                    <div class="navbar__list">
-                        <a class="navbar__list-item">
-                            <div class="navbar__list-item-icon" style="
+                  </div>
+                </div>
+                <div class="navbar__search">
+                  <div class="navbar__search-input-wrap">
+                    <input
+                      class="navbar__search-input"
+                      type="text"
+                      placeholder="Tìm kiểm sản phẩm mong muốn..."
+                    />
+                    <div class="navbar__search-rcm">
+                      <a class="search-rcm__top">
+                        <span>Luyện Thi THPT Quốc Gia</span>
+                        <img src="./assets/img/Artboard_11.3.jpg" alt="" />
+                      </a>
+                      <div class="search-rcm__mid">
+                        <div class="search-rcm--title">
+                          <div class="search-rcm--title-name">
+                            <img
+                              src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_searchtrending_black.svg"
+                              alt=""
+                              class="i-up"
+                            />
+                            <span>Từ khóa hot</span>
+                          </div>
+                          <div class="search-rcm--random"></div>
+                        </div>
+                        <ul
+                          class="search-rcm__mid-list row row-cols-lg-3 gx-2 gx-3"
+                        >
+                          <li class="search-rcm__mid-item col">
+                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
+                            <span>Tâm Lý Giảm Đến 50%</span>
+                          </li>
+                          <li class="search-rcm__mid-item col">
+                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
+                            <span>Tâm Lý Giảm Đến 50%</span>
+                          </li>
+                          <li class="search-rcm__mid-item col">
+                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
+                            <span>Tâm Lý Giảm Đến 50%</span>
+                          </li>
+                          <li class="search-rcm__mid-item col">
+                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
+                            <span>Tâm Lý Giảm Đến 50%</span>
+                          </li>
+                          <li class="search-rcm__mid-item col">
+                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
+                            <span>Tâm Lý Giảm Đến 50%</span>
+                          </li>
+                          <li class="search-rcm__mid-item col">
+                            <img src="./assets/img/Book/tdcsvnsh.jpg" alt="" />
+                            <span>Tâm Lý Giảm Đến 50%</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="line"></div>
+                      <div class="search-rcm__bot">
+                        <div class="search-rcm--title">
+                          <div class="search-rcm--title-name">
+                            <img
+                              src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu.svg"
+                              alt=""
+                            />
+                            <span>Danh mục nổi bật</span>
+                          </div>
+                          <div class="search-rcm--random"></div>
+                        </div>
+                        <ul class="search-rcm__bot-list row gx-3 row-cols-lg-4">
+                          <li class="search-rcm__bot-item col">
+                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
+                            <p>Tủ Sách Minh Long Giảm 50%</p>
+                          </li>
+                          <li class="search-rcm__bot-item col">
+                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
+                            <p>Tủ Sách Minh Long Giảm 50%</p>
+                          </li>
+                          <li class="search-rcm__bot-item col">
+                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
+                            <p>Tủ Sách Minh Long Giảm 50%</p>
+                          </li>
+                          <li class="search-rcm__bot-item col">
+                            <img src="./assets/img/Book/8936067605693.jpg" alt="" />
+                            <p>Tủ Sách Minh Long Giảm 50%</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="navbar__search-bg"></div>
+                  </div>
+                  <button>
+                    <div
+                      style="
+                        background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_search_white.svg');
+                      "
+                    ></div>
+                  </button>
+                </div>
+                <div class="navbar__list">
+                  <a class="navbar__list-item">
+                    <div class="navbar__list-item-no">
+                      <div
+                        class="navbar__list-item-icon"
+                        style="
                           background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_gray.svg');
-                        "></div>
-                            <p>Thông Báo</p>
-                        </a>
-                        <a class="navbar__list-item">
-                            <div class="navbar__list-item-icon" style="
-                          background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_cart_gray.svg');
-                        "></div>
-                            <p>Giỏ Hàng</p>
-                        </a>
-                        <a class="navbar__list-item">
-                            <div class="navbar__list-item-icon" style="
-                          background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_account_gray.svg');
-                        "></div>
-                            <p>Tài Khoản</p>
-                        </a>
-                        <a class="navbar__list-item">
-                            <div class="language">
-                                <div class="navbar__list-item-icon" style="
+                        "
+                      ></div>
+                      <p>Thông Báo</p>
+                      <div class="no-history">
+                        <div class="no-history-top">
+                          <img
+                            src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_noti_black.svg"
+                            alt=""
+                          />
+                          <span>Thông báo</span>
+                        </div>
+                        <div class="no-history-mid">
+                          <div class="lock-icon">
+                            <span
+                              style="
+                                background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/customer/ico_login.svg');
+                              "
+                            ></span>
+                          </div>
+                          <p class="no-text">Vui lòng đăng nhập để xem thông báo</p>
+                        </div>
+                        <div class="btn-list">
+                          <button>Đăng nhập</button>
+                          <button>Đăng ký</button>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="navbar__list-item">
+                    <div
+                      class="navbar__list-item-icon"
+                      style="
+                        background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_cart_gray.svg');
+                      "
+                    ></div>
+                    <p>Giỏ Hàng</p>
+                  </a>
+                  <a class="navbar__list-item item-acc">
+                    <div
+                      class="navbar__list-item-icon"
+                      style="
+                        background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_account_gray.svg');
+                      "
+                    ></div>
+                    <p>Tài Khoản</p>
+                    <div class="navbar-acc">
+                      <div class="btn-list">
+                        <button>Đăng nhập</button>
+                        <button>Đăng ký</button>
+                        <button class="log-fb">
+                          <img
+                            src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/logo/facebook_logo.svg"
+                            alt=""
+                          />
+                          Đăng nhập bằng facebook
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="navbar__list-item">
+                    <div class="language">
+                      <div
+                        class="navbar__list-item-icon"
+                        style="
+                          background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg');
+                        "
+                      ></div>
+                      <span
+                        style="
+                          background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg');
+                        "
+                      ></span>
+                    </div>
+                    <div class="language-choice">
+                      <div class="language-vn ac-language">
+                        <div
+                          class="language-icon"
+                          style="
                             background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg');
-                          "></div>
-                                <span style="
-                            background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/icon_seemore_gray.svg');
-                          "></span>
-                            </div>
-                            <div class="language-choice">
-                                <div class="language-vn ac-language">
-                                    <div class="language-icon" style="
-                              background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg');
-                            "></div>
-                                    <span>VN</span>
-                                </div>
-                                <div class="language-en">
-                                    <div class="language-icon" style="
-                              background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/store/english.svg');
-                            "></div>
-                                    <span>EN</span>
-                                </div>
-                            </div>
-                        </a>
+                          "
+                        ></div>
+                        <span>VN</span>
+                      </div>
+                      <div class="language-en">
+                        <div
+                          class="language-icon"
+                          style="
+                            background-image: url('https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/store/english.svg');
+                          "
+                        ></div>
+                        <span>EN</span>
+                      </div>
                     </div>
+                  </a>
                 </div>
+              </div>
             </nav>
-
-            <div class="container">
-                <div class="header-content">
-
-                    <div class="header-top">
-                        <div class="header-slider">
-                            <a href="">
-                                <img src="./img/Home/header/img 1.png" alt="">
-                            </a>
-                        </div>
-
-                        <div class="header-top-right">
-                            <a href="">
-                                <img src="./img/Home/header/img right 1.jpg" alt="">
-                            </a>
-                            <a href="">
-                                <img src="./img/Home/header/img right 2.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <ul class="header-list-img">
-                        <li>
-                            <a href="">
-                                <img src="./img/Home/header/list img 1.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/Home/header/list img 2.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/Home/header/list img 3.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/Home/header/list img 4.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </header>
+          </header>
 
 
         <!-- MENU -->
@@ -1886,7 +2039,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>15.000 đ</span>
                                     <span>38.000 đ</span>
@@ -1925,7 +2078,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>15.000 đ</span>
                                     <span>38.000 đ</span>
@@ -1964,7 +2117,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>40.000 đ</span>
                                     <span>90.000 đ</span>
@@ -2004,7 +2157,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>10.400 đ</span>
                                     <span>13.000 đ</span>
@@ -2044,7 +2197,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>19.200 đ</span>
                                     <span>24.000 đ</span>
@@ -2118,7 +2271,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>14.800 đ</span>
                                     <span>18.500 đ</span>
@@ -2158,7 +2311,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>18.000 đ</span>
                                     <span>22.500 đ</span>
@@ -2198,7 +2351,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>18.000 đ</span>
                                     <span>22.500 đ</span>
@@ -2238,7 +2391,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>15.200 đ</span>
                                     <span>19.000 đ</span>
@@ -2278,7 +2431,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>16.400 đ</span>
                                     <span>20.500 đ</span>
@@ -2358,7 +2511,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>334.425 đ</span>
                                     <span>440.000 đ</span>
@@ -2397,7 +2550,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>186.912 đ</span>
                                     <span>236.000 đ</span>
@@ -2437,7 +2590,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>341.052 đ</span>
                                     <span>434.000 đ</span>
@@ -2478,7 +2631,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>151.946 đ</span>
                                     <span>218.000 đ</span>
@@ -2518,7 +2671,7 @@
                                 </h3>
                             </a>
 
-                            <div class="trend-price fld-row">
+                            <div class="trend-price row">
                                 <div class="price-item">
                                     <span>239.904 đ</span>
                                     <span>294.000 đ</span>
@@ -3337,5 +3490,5 @@
 <script src="jquery-3.6.0.min.js"></script>
 <script src="main.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+<script src="./Js/header.js"></script>
 </html>
