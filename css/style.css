@@ -1002,8 +1002,7 @@ footer {
 .ft-right-contact ul {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    gap: 30px;
+    gap: 60px;
 }
 
 .ft-right-contact li {
