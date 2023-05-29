@@ -664,7 +664,7 @@
 
 /* NOTEBOOK */
 
-.row {
+.fld-row {
     flex-direction: row;
     gap: 10px;
 }
