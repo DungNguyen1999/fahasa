@@ -86,12 +86,11 @@
     }
 
     .sale-list {
-        gap: 30px;
         margin-bottom: 30px;
     }
 
     .sale-item {
-        width: calc(100% / 3);
+        width: calc((100% - 30px) / 4);
     }
 
     .tablet-none {
@@ -106,8 +105,8 @@
 
     .sale-item-link h3 {
         font-size: 0.7rem;
-        min-height: 2.2rem;
-        max-height: 2.2rem;
+        min-height: 2rem;
+        max-height: 2rem;
         margin-top: 12px;
     }
 
@@ -477,8 +476,8 @@
         font-size: 0.7rem;
     }
 
-    .sale-star i {
-        font-size: 0.8rem;
+    .sale-star ul li i {
+        font-size: 0.5rem;
     }
 
     .sale-star span {
@@ -638,7 +637,7 @@
     .children-list {
         width: 100%;
     }
-    
+
     .children-item {
         gap: 5px;
         padding: 5px;
@@ -661,7 +660,7 @@
         flex-direction: column;
         gap: 0;
     }
-    
+
     .children-price span:first-child {
         font-size: 0.7rem;
         line-height: 1rem;
@@ -679,9 +678,7 @@
         flex-direction: column;
     }
 
-    .mobile i {
-
-    }
+    .mobile i {}
 
 
     /* FORM */
@@ -754,7 +751,7 @@
     .ft-right-item {
         width: calc((100% - 20px) / 2);
     }
-    
+
     .ft-right-item h3 {
         font-size: 0.8rem;
     }
