@@ -11,28 +11,6 @@ header {
     padding-bottom: 20px;
 }
 
-.banner-nav {
-    width: 100%;
-    background: #f0f0f0;
-}
-
-.banner-nav ul {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 6px 0;
-}
-
-.banner-nav ul li a,
-.banner-nav ul li:nth-child(2) {
-    font-size: 12px;
-    font-weight: 400;
-    color: #333333;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
-
 .banner-nav-sale {
     color: #F7941E !important;
     font-weight: 500 !important;
