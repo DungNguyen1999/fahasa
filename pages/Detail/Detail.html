@@ -14,6 +14,11 @@
 
 <body>
 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0"
+        nonce="uH7EAgsT">
+        </script>
+
     <div class="wrapper">
 
         <!-- HEADER -->
@@ -1077,6 +1082,13 @@
                             cho Hệ thống Nhà sách Fahasa trên toàn quốc.
                         </span>
                     </div>
+
+                    <b>Khéo Ăn Nói Sẽ Có Được Thiên Hạ (Tái Bản 2022)</b>
+
+                    <div class="info-btn">
+                        <a class="trend-link" href="">Xem Thêm</a>
+                    </div>
+
                 </div>
             </div>
         </main>
@@ -1089,20 +1101,20 @@
             <div class="container">
                 <div class="voucher-content">
 
-                    <div class="voucher-header">
+                    <div class="voucher-header vote-cl-icon">
                         <i class="fa-solid fa-star"></i>
                         <h2>Đánh giá sản phẩm</h2>
                     </div>
 
                     <div class="vote-header">
 
-                        <div class="vote-header-data">
-                            <div class="vote-header-number">
+                        <div class="vote-data">
+                            <div class="vote-number">
                                 <div class="vote-number-content">
                                     <span>4.5</span>
                                     <span>/ 5</span>
                                 </div>
-                                <ul>
+                                <ul class="vote-star">
                                     <li>
                                         <i class="fa-solid fa-star"></i>
                                     </li>
@@ -1119,17 +1131,17 @@
                                         <i class="fa-solid fa-star-half-stroke"></i>
                                     </li>
                                 </ul>
-                                <span class="number-vote">(2 đánh giá)</span>
+                                <span class="number-vote">(3 đánh giá)</span>
                             </div>
 
-                            <div class="vote-header-process">
+                            <div class="vote-process">
 
                                 <div class="vote-process-item">
                                     <span>5 sao</span>
                                     <div class="progress-bar">
                                         <div class="progress"></div>
                                     </div>
-                                    <span>100%</span>
+                                    <span>90%</span>
                                 </div>
                                 <div class="vote-process-item">
                                     <span>4 sao</span>
@@ -1161,16 +1173,601 @@
                                 </div>
                             </div>
                         </div>
-                        <span class="vote-header-text">
+                        <span class="vote-label">
                             Chỉ có thành viên mới có thể viết nhận xét.
                             Vui lòng <a href="">đăng nhập</a> hoặc <a href="">đăng ký</a>.
                         </span>
 
                     </div>
 
+                    <div class="vote-body">
+                        <nav class="voucher-nav">
+                            <ul>
+                                <li>
+                                    <button>Mới nhất</button>
+                                </li>
+                                <li>
+                                    <button>Cũ nhất</button>
+                                </li>
+                                <li>
+                                    <button>Yêu thích nhất</button>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="vote-list">
+
+                            <div class="vote-item pt-0">
+                                <div class="vote-user">
+                                    <img src="../../img/Detail/Vote/avt 1.jpg" alt="">
+
+                                    <div class="vote name">
+                                        <b>Bùi Minh Phượng</b>
+                                        <div class="vote-time">
+                                            <i>04/09/2020</i>
+                                            <i>09:55</i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vote-text">
+                                    <ul class="vote-star fl-start">
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                    <p>
+                                        Đây là lần đầu mình đặt sách ở đây và đến lúc nhận
+                                        hàng thì thấy khá ưng, gói hàng rất kĩ và không ngờ
+                                        giao hàng nhanh đến vậy 😊 Sách rất đẹp và không bị loang chữ 👍
+                                    </p>
+
+                                    <ul class="vote-img">
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 1.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 2.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 3.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 4.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                    </ul>
+
+                                    <div id="fullscreen-image" class="fullscreen-image">
+                                        <img id="fullscreen-image-src" class="fullscreen-image-src" src="" alt="">
+                                        <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+                                        <div class="navigation-buttons">
+                                            <button class="navigation-button" id="prev-button"
+                                                onclick="showPreviousImage()">&lt;</button>
+                                            <button class="navigation-button" id="next-button"
+                                                onclick="showNextImage()">&gt;</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="vote-interac">
+                                        <button class="vote-like" tabindex="0">
+                                            <i class="fa-solid fa-thumbs-up"></i>
+                                            <span>Thích</span>
+                                            <span>(2)</span>
+                                        </button>
+
+                                        <button class="vote-report">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <span>Báo cáo</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vote-item">
+                                <div class="vote-user">
+                                    <img src="../../img/Detail/Vote/avt 2.jpg" alt="">
+
+                                    <div class="vote name">
+                                        <b>Hoa Nguyen</b>
+                                        <div class="vote-time">
+                                            <i>15/11/2022</i>
+                                            <i>15:41</i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vote-text">
+                                    <ul class="vote-star fl-start">
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                    <p>
+                                        Giao hàng nhanh, gói đẹp còn cả túi nilong bọc ngoài.
+                                        Có bookmark, chất lượng chữ in, giấy rất tốt. Nội dung
+                                        thì mình chưa kịp thẩm hết nhưng đọc sơ qua cũng khá là hay.
+                                    </p>
+
+                                    <ul class="vote-img">
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 7.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 8.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 9.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                    </ul>
+
+                                    <div id="fullscreen-image" class="fullscreen-image">
+                                        <img id="fullscreen-image-src" class="fullscreen-image-src" src="" alt="">
+                                        <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+                                        <div class="navigation-buttons">
+                                            <button class="navigation-button" id="prev-button"
+                                                onclick="showPreviousImage()">&lt;</button>
+                                            <button class="navigation-button" id="next-button"
+                                                onclick="showNextImage()">&gt;</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="vote-interac">
+                                        <button class="vote-like" tabindex="0">
+                                            <i class="fa-solid fa-thumbs-up"></i>
+                                            <span>Thích</span>
+                                            <span>(1)</span>
+                                        </button>
+
+                                        <button class="vote-report">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <span>Báo cáo</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vote-item">
+                                <div class="vote-user">
+                                    <img src="../../img/Detail/Vote/avt 3.jpg" alt="">
+
+                                    <div class="vote name">
+                                        <b>Anh Minh</b>
+                                        <div class="vote-time">
+                                            <i>03/05/2023</i>
+                                            <i>22:14</i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="vote-text">
+                                    <ul class="vote-star fl-start">
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-regular fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                    <p>
+                                        Sách đẹp chữ in đậm rõ nét. Đóng gói còn hơi
+                                        sơ sài nên bị trầy nhẹ ở góc sách nhưng nói chung vẫn ổn 🙂
+                                    </p>
+
+                                    <ul class="vote-img">
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 10.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 11.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                        <li>
+                                            <img src="../../img/Detail/Deatail/img 12.jpg" alt=""
+                                                onclick="showImage(this.src)">
+                                        </li>
+                                    </ul>
+
+                                    <div id="fullscreen-image" class="fullscreen-image">
+                                        <img id="fullscreen-image-src" class="fullscreen-image-src" src="" alt="">
+                                        <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+                                        <div class="navigation-buttons">
+                                            <button class="navigation-button" id="prev-button"
+                                                onclick="showPreviousImage()">&lt;</button>
+                                            <button class="navigation-button" id="next-button"
+                                                onclick="showNextImage()">&gt;</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="vote-interac">
+                                        <button class="vote-like" tabindex="0">
+                                            <i class="fa-solid fa-thumbs-up"></i>
+                                            <span>Thích</span>
+                                            <span>(0)</span>
+                                        </button>
+
+                                        <button class="vote-report">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <span>Báo cáo</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </main>
+
+
+        <!-- FB COMMENT -->
+
+
+        <main class="voucher">
+            <div class="container">
+                <div class="voucher-content">
+
+                    <div class="voucher-header fb-color">
+                        <i class="fa-brands fa-facebook"></i>
+                        <h2>Bình luận trên Facebook</h2>
+                    </div>
+
+                    <div class="comment">
+                        <div class="fb-comments"
+                            data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+                            data-width="1200" data-numposts="1"></div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <!-- POLICY -->
+
+
+        <main class="policy">
+            <div class="container">
+                <ul class="policy-list">
+                    <li>
+                        <img src="../../img/Detail/Policy/img 1.png" alt="">
+                        <button>Chính Sách Khách Sỉ</button>
+                    </li>
+                    <li>
+                        <img src="../../img/Detail/Policy/img 2.png" alt="">
+                        <button>Thời Gian Giao Hàng</button>
+                    </li>
+                    <li>
+                        <img src="../../img/Detail/Policy/img 3.png" alt="">
+                        <button>Chính Sách Đổi Trả</button>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+
+        <!-- FORM -->
+
+
+        <main class="form mt-15">
+            <div class="container">
+                <div class="form-content">
+
+                    <div class="form-text">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>ĐĂNG KÝ NHẬN BẢN TIN</span>
+                    </div>
+
+                    <form action="">
+                        <input type="email" placeholder="Nhập địa chỉ email của bạn...">
+                        <button>Đăng ký</button>
+                    </form>
+
+                </div>
+            </div>
+        </main>
+
+
+        <!-- FOOTER -->
+
+
+        <footer>
+            <div class="container">
+                <div class="ft-content">
+
+                    <div class="ft-body">
+
+                        <div class="ft-left">
+
+                            <a class="ft-logo" href="">
+                                <img src="../../img/Home/Footer/logo.png" alt="">
+                            </a>
+
+                            <span>
+                                Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM
+                                <br>
+                                Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA
+                                <br>
+                                60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam
+                            </span>
+                            <span>
+                                Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi.
+                                KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng
+                                cũng như tất cả Hệ Thống Fahasa trên toàn quốc.
+                            </span>
+
+                            <a class="ft-noti-link" href="">
+                                <img src="../../img/Home/Footer/noti.png" alt="">
+                            </a>
+
+                            <ul class="ft-left-contact">
+                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/fahasa/">
+                                        <img src="../../img/Home/Footer/fb.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/fahasa_official/">
+                                        <img src="../../img/Home/Footer/ins.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCUZcVOLSxK1q6RfgzQ9-HYQ">
+                                        <img src="../../img/Home/Footer/ytb.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" href="https://fahasa-blog.tumblr.com/">
+                                        <img src="../../img/Home/Footer/tumblr.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" href="https://twitter.com/Fahasa_com">
+                                        <img src="../../img/Home/Footer/tw.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" href="https://www.pinterest.com/fahasaVN/">
+                                        <img src="../../img/Home/Footer/pinterest.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="ft-app">
+                                <li>
+                                    <a href="">
+                                        <img src="../../img/Home/Footer/gg play.png" alt="">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <img src="../../img/Home/Footer/app store.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ft-right">
+
+                            <div class="ft-right-content">
+
+                                <div class="ft-right-item">
+                                    <h3>DỊCH VỤ</h3>
+
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Điều khoản sử dụng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chính sách bảo mật thông tin cá nhân
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chính sách bảo mật thanh toán
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Giới thiệu Fahasa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Hệ thống trung tâm - nhà sách
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ft-right-item">
+                                    <h3>Hỗ Trợ</h3>
+
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Chính sách đổi - trả - hoàn tiền
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chính sách bảo hành - bồi hoàn
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chính sách vận chuyển
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chính sách khách sỉ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Phương thức thanh toán và xuất HĐ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ft-right-item">
+                                    <h3>Tài khoản của tôi</h3>
+
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                Đăng nhập / Tạo mới tài khoản
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Thay đổi địa chỉ khách hàng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Chi tiết tài khoản
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                Lịch sử mua hàng
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="ft-right-contact">
+                                <h3>Liên hệ</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span>60-62 Lê Lợi, Q.1, TP. HCM</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>cskh@fahasa.com.vn</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>1900636467</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="ft-right-brand">
+                                <li>
+                                    <img src="../../img/Home/Footer/img 1.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img src="../../img/Home/Footer/img 2.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img src="../../img/Home/Footer/img 3.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img src="../../img/Home/Footer/img 4.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img src="../../img/Home/Footer/img 5.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img class="h-40" src="../../img/Home/Footer/img 6.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img class="h-36" src="../../img/Home/Footer/img 7.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img class="h-50" src="../../img/Home/Footer/img 8.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img class="h-44" src="../../img/Home/Footer/img 9.png" alt="">
+                                </li>
+
+                                <li>
+                                    <img class="h-65" src="../../img/Home/Footer/img 10.png" alt="">
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do
+                        Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày
+                        20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.
+                    </p>
+
+                </div>
+            </div>
+        </footer>
 
     </div>
 

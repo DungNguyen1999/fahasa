@@ -39,15 +39,16 @@
     transition: all .2s ease-in-out;
 }
 
-.detail-img-list li:hover {
-    border: 1px solid #2489F4;
+.detail-img-list li:hover,
+.vote-img li:hover {
     border-radius: 8px;
     overflow: hidden;
-    transform: scale(1.1);
+    transform: scale(1.2);
     cursor: pointer;
 }
 
-.detail-img-list img {
+.detail-img-list img,
+.vote-img img {
     width: 80px;
     height: 80px;
 }
@@ -525,7 +526,7 @@
     gap: 10px;
     border-bottom: 1px solid #c1c1c1;
     padding-bottom: 10px;
-    margin-top: 15px;
+    margin: 20px 0;
 }
 
 .product-info ul {
@@ -542,7 +543,7 @@
 }
 
 .product-info a,
-.vote-header-text a {
+.vote-label a {
     color: #2489F4;
     text-transform: capitalize;
     transition: all .2s ease-in;
@@ -550,7 +551,7 @@
 
 .product-info a:hover,
 .product-info span,
-.vote-header-text a:hover {
+.vote-label a:hover {
     color: #C92127;
 }
 
@@ -573,6 +574,13 @@
     list-style-type: disc;
 }
 
+.info-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 8px;
+}
+
 /* END INFO */
 
 /* VOTE */
@@ -582,16 +590,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px 0;
 }
 
-.vote-header-data {
+.vote-data {
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.vote-header-number {
+.vote-number {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -600,23 +609,23 @@
 }
 
 .vote-number-content span:first-child {
-    font-size: 2.3rem;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
 .vote-number-content span:last-child {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
-.vote-header-number ul {
+.vote-star {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 3px;
+    gap: 2px;
 }
 
-.vote-header-number i {
+.vote-star i {
     font-size: 0.9rem;
     color: #ffce3d;
 }
@@ -627,7 +636,7 @@
     color: #7A7E7F;
 }
 
-.vote-header-process {
+.vote-process {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -653,7 +662,7 @@
 .progress {
     width: 90%;
     height: 100%;
-    background-color: #ffd965;
+    background-color: #F6A500;
 }
 
 .pro-10 {
@@ -664,9 +673,163 @@
     width: 0;
 }
 
-.vote-header-text {
+.vote-label {
     width: 50%;
     font-size: 0.9rem;
     font-weight: 400;
     color: #333333;
+}
+
+/* VOTE CONTENT */
+
+.vote-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vote-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,.09);
+    padding: 20px 0;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.vote-user {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vote-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.vote-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.vote-time {
+    display: flex;
+    gap: 10px;
+}
+
+.vote-user i {
+    color: #7A7E7F;
+}
+
+.vote-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fl-start {
+    justify-content: flex-start;
+}
+
+.vote-img {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.vote-img li {
+    width: fit-content;
+    transition: all .2s ease-in-out;
+}
+
+.vote-interac {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.vote-interac span {
+    text-transform: capitalize;
+}
+
+.vote-like,
+.vote-report {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    outline: none;
+    background: white;
+    cursor: pointer;
+}
+
+.vote-like,
+.vote-report {
+    color: #9FA7AB;
+}
+
+.vote-like:focus,
+.vote-like:focus i {
+    color: #f47320;
+}
+
+.vote-cl-icon i {
+    color: #ffce3d;
+}
+
+.fb-color i {
+    color: #3b5998;
+}
+
+.comment {
+    margin-top: 10px;
+}
+
+/* END VOTE */
+
+/* POLICY */
+
+.policy {
+    width: 100%;
+    height: auto;
+}
+
+.policy-list {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+}
+
+.policy-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.policy-list button {
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #646464;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.policy-list button:hover {
+    color: #C92127;
 }
