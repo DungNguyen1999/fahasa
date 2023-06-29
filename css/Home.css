@@ -1,5 +1,19 @@
 /* HEADER */
 
+.mh-757 {
+    max-height: 757px;
+    overflow: hidden;
+}
+
+.mh-382 {
+    max-height: 382px;
+    overflow: hidden;
+}
+
+.mh-372 {
+    max-height: 372px;
+}
+
 .header-content {
     width: 100%;
     display: flex;

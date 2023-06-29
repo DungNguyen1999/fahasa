@@ -5,6 +5,21 @@ header {
 
 /* BANNER */
 
+.mh-386 {
+    max-height: 386px;
+    overflow: hidden;
+}
+
+.mh-749 {
+    max-height: 749px;
+    overflow: hidden;
+}
+
+.mh-382 {
+    max-height: 382px;
+    overflow: hidden;
+}
+
 .banner {
     width: 100%;
     background: #3e82c0;
