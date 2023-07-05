@@ -20,5 +20,8 @@
     "url": "https://github.com/KitsuC/Fahasa/issues"
   },
   "homepage": "https://github.com/KitsuC/Fahasa#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
 }

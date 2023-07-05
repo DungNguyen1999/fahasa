@@ -1,7 +1,7 @@
 .wrapper {
     width: 100%;
     height: auto;
-    background: #F0F0F0;
+    background: #f0f0f0;
 }
 
 .container {
@@ -29,7 +29,7 @@
 .banner-nav ul li:nth-child(2),
 .banner-nav ul li:nth-child(4),
 .banner-nav ul li:nth-child(6) {
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 400;
     color: #333333;
     line-height: 1.4;
@@ -49,7 +49,7 @@
     height: 50px;
     display: flex;
     align-items: center;
-    background: #FCDAB0;
+    background: #fcdab0;
     padding-left: 10px;
 }
 
@@ -74,7 +74,7 @@
 .sale-logo h2 {
     font-size: 1.3rem;
     font-weight: 550;
-    color: #1F1D1D;
+    color: #1f1d1d;
 }
 
 .sale-logo span {
@@ -171,7 +171,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: #F7941E;
+    background: #f7941e;
     font-size: 1.1rem;
     font-weight: 600;
     color: white;
@@ -226,7 +226,7 @@
 .trend-star span {
     font-size: 1rem;
     font-weight: 500;
-    color: #F7941E;
+    color: #f7941e;
 }
 
 .sale-process {
@@ -264,7 +264,7 @@
     border-radius: 25px;
     text-align: center;
     box-shadow: 2px 3px 5px #ccc;
-    background-image: linear-gradient(to right, #ff9800, #F7695D);
+    background-image: linear-gradient(to right, #ff9800, #f7695d);
     transition: all 0.3s ease;
     padding: 10px;
     margin-top: 15px;
@@ -290,7 +290,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #FCDDEF;
+    background: #fcddef;
     padding: 12px 20px;
 }
 
@@ -302,7 +302,7 @@
 .trend-header h2 {
     font-size: 1.2rem;
     font-weight: 550;
-    color: #1F1D1D;
+    color: #1f1d1d;
     text-align: center;
     text-transform: uppercase;
     line-height: 1.4;
@@ -311,44 +311,32 @@
 .sale-nav {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    border-bottom: 1px solid #F2F4F5;
+    border-bottom: 1px solid #e6e4e4;
     padding: 10px 20px;
 }
 
-.show-border {
-    border: 1px solid #ffcd94;
-}
-
-.show-border button {
-    color: #F7931E;
-    font-weight: bold;
-}
-
-.sale-nav li {
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: capitalize;
-    transition: all 0.1s ease;
-    padding: 10px 15px;
-}
-
-.sale-nav li:hover {
-    border: 1px solid #f7931e;
-    box-shadow: 0 0 10px rgba(247, 147, 30, 0.3);
-}
-
-.sale-nav li:hover button {
-    color: #F7931E;
-}
-
 .sale-nav button {
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
     outline: none;
     background: white;
     cursor: pointer;
     text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.1s ease;
+    padding: 7px 10px;
+}
+
+.sale-nav button:hover,
+.sale-nav button:focus {
+    font-weight: bold;
+    color: #f7931e;
+    border: 1px solid #f7931e;
+    box-shadow: 0 0 10px rgba(247, 147, 30, 0.3);
 }
 
 .sale-item a {
@@ -389,14 +377,14 @@
 .trend-price span:first-child,
 .price-item span:first-child,
 .children-price span:first-child {
-    color: #C92127;
+    color: #c92127;
     font-size: 1.2rem;
     font-weight: 600;
     min-height: 25px;
 }
 
 .color-orange {
-    color: #F7941E !important;
+    color: #f7941e !important;
 }
 
 .trend-price span:last-child,
@@ -432,11 +420,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #C92127;
+    background: white;
+    color: #c92127;
     border: 2px solid #c92127;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 700;
+    cursor: pointer;
     transition: all 0.3s ease;
     padding: 10px 50px;
 }
@@ -444,6 +434,10 @@
 .trend-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 10px rgba(201, 33, 39, 0.3);
+}
+
+.toggle-btn {
+    margin: 10px 0;
 }
 
 /* END TREND */
@@ -477,7 +471,7 @@
 .price-sale {
     width: fit-content;
     height: fit-content;
-    background-color: #C92127;
+    background-color: #c92127;
     color: #fff !important;
     font-size: 1em !important;
     font-weight: 600;
@@ -568,7 +562,7 @@
 }
 
 .form-content button:hover {
-    background: #C92127;
+    background: #c92127;
 }
 
 /* END FORM */
